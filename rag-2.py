@@ -75,6 +75,7 @@ prompt = ChatPromptTemplate.from_messages(
     ]
 )
 
+print("Initializing agent functions...")
 @tool(response_format="content_and_artifact")
 def retrieve(query: str):
     """Retrieve information related to a query."""
@@ -126,7 +127,7 @@ def generate(state: MessagesState):
     response = llm.invoke(prompt)
     return {"messages": [response]}
 
-
+print("Initializing agent graph...")
 tools = ToolNode([retrieve])
 
 graph_builder = StateGraph(MessagesState)
@@ -144,9 +145,11 @@ graph_builder.add_edge("generate", END)
 
 graph = graph_builder.compile()
 
+print("Initializing short term memory...")
 memory = MemorySaver()
 graph = graph_builder.compile(checkpointer=memory)
   
+print("Executing agent.")
 agent_executor = create_react_agent(llm, [retrieve], checkpointer=memory)
 
 config = {"configurable": {"thread_id": "1"}}
