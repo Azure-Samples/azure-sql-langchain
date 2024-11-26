@@ -1,4 +1,4 @@
-# Project Name
+# LangChain samples with `langchain_sqlserver`
 
 Get started with the `langchain_sqlserver` library with the following tutorials. All the tutorials works with Azure SQL or SQL Server 2025.
 
