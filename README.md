@@ -8,7 +8,15 @@ Get started with the `langchain_sqlserver` library with the following tutorials.
 > [!NOTE]  
 > In Azure SQL, Vector Functions are in Public Preview. Learn the details about vectors in Azure SQL here: https://aka.ms/azure-sql-vector-public-preview
 
-## Build a semantic search engine
+## LangChain Getting-Started Samples
+
+If you're just getting started with LangChain, take a look at this article with the related sample: [LangChain Integration for Vector Support for SQL-based AI applications](https://devblogs.microsoft.com/azure-sql/langchain-with-sqlvectorstore-example/)
+
+If you already have some familiarity with LangChain, and you are looking for samples that helps you to get started using LangChain with SQL Serve or Azure SQL, you can jump directly to the samples below.
+
+## LangChain Tutorials
+
+### Build a semantic search engine
 
 Build a semantic search engine over a PDF with document loaders, embedding models, and vector stores.
 
@@ -18,7 +26,7 @@ The file `./semantic-search.py` contains the code of the tutorial. You can run i
 
 The database used in the sample is named `langchain`. Make sure you have permission to create tables in the database.
 
-## Build a Retrieval Augmented Generation (RAG) App: Part 1
+### Build a Retrieval Augmented Generation (RAG) App: Part 1
 
 Introduces RAG and walks through a minimal implementation.
 
@@ -26,7 +34,7 @@ The tutorial described in the [Build a Retrieval Augmented Generation (RAG) App:
 
 The file `./rag-1.py` contains the code of the tutorial.
 
-## Build a Retrieval Augmented Generation (RAG) App: Part 2
+### Build a Retrieval Augmented Generation (RAG) App: Part 2
 
 Extends the implementation to accommodate conversation-style interactions and multi-step retrieval processes.
 
