@@ -1,57 +1,36 @@
 # Project Name
 
-(short, 1-3 sentenced, description of the project)
+Get started with the `langchain_sqlserver` library with the following tutorials. All the tutorials works with Azure SQL or SQL Server 2025.
 
-## Features
+> [!NOTE]  
+> SQL Server 2025 is available as Community Technology Preview (CTP) 1.0. To get more info on how to get the CTP, take a look here: [Announcing Microsoft SQL Server 2025: Enterprise AI-ready database from ground to cloud](https://www.microsoft.com/en-us/sql-server/blog/2024/11/19/announcing-microsoft-sql-server-2025-apply-for-the-preview-for-the-enterprise-ai-ready-database/)
 
-This project framework provides the following features:
+> [!NOTE]  
+> In Azure SQL, Vector Functions are in Public Preview. Learn the details about vectors in Azure SQL here: https://aka.ms/azure-sql-vector-public-preview
 
-* Feature 1
-* Feature 2
-* ...
+## Build a semantic search engine
 
-## Getting Started
+Build a semantic search engine over a PDF with document loaders, embedding models, and vector stores.
 
-### Prerequisites
+The tutorial described in the [Build a semantic search engine](https://python.langchain.com/docs/tutorials/retrievers/) page has been implemented in this project, but using the `langchain_sqlserver` library.
 
-(ideally very short, if any)
+The file `./semantic-search.py` contains the code of the tutorial. You can run it in your local environment. Make sure the create an `.env` using `.env.example` as a template.
 
-- OS
-- Library version
-- ...
+The database used in the sample is named `langchain`. Make sure you have permission to create tables in the database.
 
-### Installation
+## Build a Retrieval Augmented Generation (RAG) App: Part 1
 
-(ideally very short)
+Introduces RAG and walks through a minimal implementation.
 
-- npm install [package name]
-- mvn install
-- ...
+The tutorial described in the [Build a Retrieval Augmented Generation (RAG) App: Part 1](https://python.langchain.com/docs/tutorials/rag/) page has been implemented in this project, but using the `langchain_sqlserver` library.
 
-### Quickstart
-(Add steps to get up and running quickly)
+The file `./rag-1.py` contains the code of the tutorial.
 
-1. git clone [repository clone url]
-2. cd [repository name]
-3. ...
+## Build a Retrieval Augmented Generation (RAG) App: Part 2
 
+Extends the implementation to accommodate conversation-style interactions and multi-step retrieval processes.
 
-## Demo
+The tutorial described in the [Build a Retrieval Augmented Generation (RAG) App: Part 2](https://python.langchain.com/docs/tutorials/qa_chat_history/) page has been implemented in this project, but using the `langchain_sqlserver` library.
 
-A demo app is included to show how to use the project.
+The file `./rag-2.py` contains the code of the tutorial.
 
-To run the demo, follow these steps:
-
-(Add steps to start up the demo)
-
-1.
-2.
-3.
-
-## Resources
-
-(Any additional resources or related projects)
-
-- Link to supporting information
-- Link to similar sample
-- ...

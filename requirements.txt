@@ -1,0 +1,10 @@
+pyodbc
+python-dotenv
+azure-identity
+langchain 
+langchain-openai
+langchain-community 
+langchain-sqlserver
+pypdf
+beautifulsoup4
+langgraph
