@@ -1,0 +1,5 @@
+Empty Book
+---
+John Doe
+---
+Really, nothing here!

@@ -1,0 +1,28 @@
+T-SQL Fundamentals (Developer Reference) 4th Edition
+---
+Itzik Ben-Gan
+---
+Query and modify data effectively with the latest T-SQL features
+
+Master Transact-SQL's fundamentals, and write correct, robust code for querying and modifying data with modern Microsoft data technologies, including SQL Server 2022, Azure SQL Database, and Azure SQL Managed Instance. Long-time Microsoft Data Platform MVP Itzik Ben-Gan explains key T-SQL concepts, helping you apply your knowledge with hands-on exercises. Ben-Gan first introduces T-SQL's theory and underlying logic, illuminating it as both a language and a way of thinking. Next, he walks through core topics, including logical query processing, single table queries, joins, subqueries, table expressions, set operators, data analysis, data modifications, temporal tables, and transactions and concurrency. Building on this foundation, you'll enhance your coding capabilities, from programmatic constructs to the powerful new SQL Graph. Throughout, Ben-Gan presents reusable T-SQL sample code that works in cloud, on-premises, and hybrid environments.
+
+Microsoft Data Platform MVP Itzik Ben-Gan helps you:
+
+- Understand why T-SQL works as it does, so you can write better code
+- Review relational theory elements and modern SQL Server architecture
+- Create tables and defi ne data integrity
+- Build single-table SELECT queries, multiple-table joins, and subqueries
+- Utilize derived tables, Common Table Expressions, views, inline table-valued functions, and APPLY
+- Make the most of UNION, INTERSECT, and EXCEPT set operators
+- Perform data analysis with window functions, pivoting, grouping sets, and time series
+- Insert, update, delete, and merge data
+- Get started with system-versioned temporal tables
+- Understand and apply transactions and concurrency, including concurrent user connections, locks, blocking, isolation levels, and more
+- Use SQL Graph to model, create, modify, and query graph-based data
+- Explore SQL Server programmable objects and programming capabilities
+- Set up your environment, install sample databases, and fi nd even more help
+
+For IT Professionals and Consultants
+
+- For T-SQL developers, DBAs, BI practitioners, data scientists, report writers, analysts, architects, and SQL Server power users
+- For anyone else who needs to write queries or develop T-SQL code for SQL Server, Azure SQL Database, or Azure SQL Managed Instance

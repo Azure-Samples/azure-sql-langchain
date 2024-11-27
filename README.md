@@ -14,6 +14,15 @@ If you're just getting started with LangChain, take a look at this article with 
 
 If you already have some familiarity with LangChain, and you are looking for samples that helps you to get started using LangChain with SQL Serve or Azure SQL, you can jump directly to the samples below.
 
+## LangChain Samples
+
+Make sure the create an `.env` using `.env.example` as a template.
+
+Samples on how to use the `langchain_sqlserver` library with SQL Server or Azure SQL as a vector store are:
+
+- `test-1.py`: Basic sample to store vectors, content and metadata into SQL Server or Azure SQL and then do simple similarity searches.
+- `test-2.py`: Read books reviews from a file, store it in SQL Server or Azure SQL, and then do similarity searches.
+
 ## LangChain Tutorials
 
 ### Build a semantic search engine
