@@ -67,7 +67,7 @@ print()
 print("Search with score")
 results = vector_store.similarity_search_with_score(query=query,k=2)
 for doc, score in results:
-    print(f"* [Similarity Score={score:3f}] {doc.metadata}")
+    print(f"* [Similarity Distance={score:3f}] {doc.metadata}")
 
 print()
 print("Use as Retriever")
