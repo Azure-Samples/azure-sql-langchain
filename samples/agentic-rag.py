@@ -57,8 +57,9 @@ vector_store.delete()
 
 print("Adding documents...")
 for i, docs in enumerate(docs_list_batch):
+    ids = range(1+i*doc_batch_size, 1+(i+1)*doc_batch_size) 
     print(f"Adding batch {i+1} of {len(docs_list_batch)} ({len(docs)} documents)...")
-    vector_store.add_documents(docs)
+    vector_store.add_documents(docs, ids=ids)    
 
 print("Creating retriever tool...")
 retriever = vector_store.as_retriever()
