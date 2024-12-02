@@ -37,7 +37,7 @@ The database used in the sample is named `langchain`. Make sure you have permiss
 
 ### Build a Retrieval Augmented Generation (RAG) App: Part 1
 
-Introduces RAG and walks through a minimal implementation.
+Introduces RAG and walks through a minimal implementation, using LangGraph and LangChain.
 
 The tutorial described in the [Build a Retrieval Augmented Generation (RAG) App: Part 1](https://python.langchain.com/docs/tutorials/rag/) page has been implemented in this project, but using the `langchain_sqlserver` library.
 
@@ -45,7 +45,7 @@ The file `./rag-1.py` contains the code of the tutorial.
 
 ### Build a Retrieval Augmented Generation (RAG) App: Part 2
 
-Extends the implementation to accommodate conversation-style interactions and multi-step retrieval processes.
+Extends the implementation to accommodate conversation-style interactions and multi-step retrieval processes, using LangGraph and LangChain.
 
 The tutorial described in the [Build a Retrieval Augmented Generation (RAG) App: Part 2](https://python.langchain.com/docs/tutorials/qa_chat_history/) page has been implemented in this project, but using the `langchain_sqlserver` library.
 
