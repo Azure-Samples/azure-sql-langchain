@@ -14,6 +14,12 @@ If you're just getting started with LangChain, take a look at this article with 
 
 If you already have some familiarity with LangChain, and you are looking for samples that helps you to get started using LangChain with SQL Serve or Azure SQL, you can jump directly to the samples below.
 
+All samples are availabel int the `./samples` folder:
+
+```bash
+cd samples
+```
+
 ## LangChain Samples
 
 Make sure the create an `.env` using `.env.example` as a template.
@@ -51,3 +57,10 @@ The tutorial described in the [Build a Retrieval Augmented Generation (RAG) App:
 
 The file `./rag-2.py` contains the code of the tutorial.
 
+### Agentic RAG
+
+[Retrieval Agents](https://python.langchain.com/docs/tutorials/qa_chat_history/#agents) are useful when we want to make decisions about whether to retrieve data from an source.
+
+The tutorial described in the [Agentic RAG](https://langchain-ai.github.io/langgraph/tutorials/rag/langgraph_agentic_rag/) page has been implemented in this project, but using the `langchain_sqlserver` library.
+
+The file `./agentic-rag.py` contains the code of the tutorial.

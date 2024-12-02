@@ -47,7 +47,7 @@ all_splits = text_splitter.split_documents(docs)
 
 print("Saving chunks into vector store...")
 vector_store = SQLServer_VectorStore.from_documents(
-    documents=all_splits , 
+    documents=all_splits, 
     embedding=AzureOpenAIEmbeddings(azure_deployment=os.environ["AZURE_OPENAI_EMBEDDING_DEPLOYMENT_NAME"]),
     embedding_length=1536,
     connection_string=os.environ["MSSQL_CONNECTION_STRING"]

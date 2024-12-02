@@ -17,7 +17,7 @@ load_dotenv()
 
 # Load document
 print("Loading document...")
-file_path = "./example_data/nke-10k-2023.pdf"
+file_path = "../samples_data/nke-10k-2023.pdf"
 loader = PyPDFLoader(file_path)
 docs = loader.load()
 

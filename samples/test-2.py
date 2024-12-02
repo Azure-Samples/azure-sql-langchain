@@ -28,7 +28,7 @@ vector_store = SQLServer_VectorStore(
 print("Adding documents...")
 
 def get_book(book_id):    
-    with open(f"./example_data/book{book_id}.txt", "r") as file:        
+    with open(f"../samples_data/book{book_id}.txt", "r") as file:        
         payload = file.read()
 
     book = payload.split("---")
@@ -50,9 +50,11 @@ print("Delete sample document...")
 vector_store.delete(ids=["4"])
 
 query = "learn how to write T-SQL queries"
-
 print()
 print(f"Search: '{query}'")
+
+print()
+print(f"Simple search")
 results = vector_store.similarity_search(query=query,k=2)
 for doc in results:
     print(f"* {doc.metadata}")
