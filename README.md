@@ -10,7 +10,7 @@ Get started with the [`langchain_sqlserver` library](https://github.com/langchai
 
 ## Create an Azure SQL Database
 
-If you don't have an Azure SQL Database yet, you can create one following the [quickstart guide](https://learn.microsoft.com/en-us/azure/azure-sql/database/single-database-create-quickstart?view=azuresql&tabs=azure-portal). Keep in mind that you can take advatange of the Azure SQL *free* tier: [Try Azure SQL Database for free](https://learn.microsoft.com/en-us/azure/azure-sql/database/free-offer?view=azuresql)
+If you don't have an Azure SQL Database yet, you can create one following the [quickstart guide](https://learn.microsoft.com/en-us/azure/azure-sql/database/single-database-create-quickstart?view=azuresql&tabs=azure-portal). Keep in mind that you can take advatange of the Azure SQL *free* tier: [Try Azure SQL Database for free](https://learn.microsoft.com/en-us/azure/azure-sql/database/free-offer?view=azuresql).
 
 ## LangChain Getting-Started Samples
 
