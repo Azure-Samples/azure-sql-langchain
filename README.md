@@ -1,6 +1,6 @@
 # LangChain samples with `langchain_sqlserver`
 
-Get started with the `langchain_sqlserver` library with the following tutorials. All the tutorials works with Azure SQL or SQL Server 2025.
+Get started with the [`langchain_sqlserver` library](https://github.com/langchain-ai/langchain-azure/tree/main/libs/sqlserver) with the following tutorials. All the tutorials works with Azure SQL or SQL Server 2025.
 
 > [!NOTE]  
 > SQL Server 2025 is available as Community Technology Preview (CTP) 1.0. To get more info on how to get the CTP, take a look here: [Announcing Microsoft SQL Server 2025: Enterprise AI-ready database from ground to cloud](https://www.microsoft.com/en-us/sql-server/blog/2024/11/19/announcing-microsoft-sql-server-2025-apply-for-the-preview-for-the-enterprise-ai-ready-database/)
