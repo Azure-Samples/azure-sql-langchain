@@ -20,6 +20,18 @@ All samples are availabel int the `./samples` folder:
 cd samples
 ```
 
+It is recommended that you use a virtual environment:
+
+```bash
+python -m venv .venv
+```
+
+And then make sure you have installed all required dependencies:
+
+```bash
+pip install -U -r .\requirements.txt
+```
+
 ## LangChain Samples
 
 Make sure the create an `.env` using `.env.example` as a template.
