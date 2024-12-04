@@ -8,6 +8,10 @@ Get started with the [`langchain_sqlserver` library](https://github.com/langchai
 > [!NOTE]  
 > In Azure SQL, Vector Functions are in Public Preview. Learn the details about vectors in Azure SQL here: https://aka.ms/azure-sql-vector-public-preview
 
+## Create an Azure SQL Database
+
+If you don't have an Azure SQL Database yet, you can create one following the [quickstart guide](https://learn.microsoft.com/en-us/azure/azure-sql/database/single-database-create-quickstart?view=azuresql&tabs=azure-portal). Keep in mind that you can take advatange of the Azure SQL *free* tier: [Try Azure SQL Database for free](https://learn.microsoft.com/en-us/azure/azure-sql/database/free-offer?view=azuresql)
+
 ## LangChain Getting-Started Samples
 
 If you're just getting started with LangChain, take a look at this article with the related sample: [LangChain Integration for Vector Support for SQL-based AI applications](https://devblogs.microsoft.com/azure-sql/langchain-with-sqlvectorstore-example/)
