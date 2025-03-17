@@ -45,8 +45,6 @@ doc_splits = text_splitter.split_documents(docs_list)
       
 # Add Vector Store
 print("Configuring vector store...")
-doc_batch_size=100
-docs_list_batch = [doc_splits[i:i+doc_batch_size] for i in range(0, len(doc_splits), doc_batch_size)]
 vector_store = SQLServer_VectorStore(
     embedding_function=AzureOpenAIEmbeddings(azure_deployment=os.environ["AZURE_OPENAI_EMBEDDING_DEPLOYMENT_NAME"]),
     embedding_length=1536,
@@ -56,10 +54,8 @@ vector_store = SQLServer_VectorStore(
 vector_store.delete()
 
 print("Adding documents...")
-for i, docs in enumerate(docs_list_batch):
-    ids = range(1+i*doc_batch_size, 1+(i+1)*doc_batch_size) 
-    print(f"Adding batch {i+1} of {len(docs_list_batch)} ({len(docs)} documents)...")
-    vector_store.add_documents(docs, ids=ids)    
+ids=[i for i in range(len(doc_splits))]
+vector_store.add_documents(doc_splits, ids=ids)
 
 print("Creating retriever tool...")
 retriever = vector_store.as_retriever()
