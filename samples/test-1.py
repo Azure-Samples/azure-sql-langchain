@@ -7,14 +7,13 @@ from langchain_openai import AzureOpenAIEmbeddings
 
 # logging.basicConfig(format='%(asctime)s - %(levelname)s - %(message)s', level=logging.INFO)
 # logger = logging.getLogger(__name__)
-# logger.setLevel(logging.INFO)
+# logger.setLevel(logging.DEBUG)
 
 load_dotenv() 
 
-print("Setting up connection to Azure OpenAI embeddings...")
-
+print(f"Setting up connection to Azure OpenAI embeddings ({os.environ["AZURE_OPENAI_EMBEDDING_DEPLOYMENT_NAME"]})...")
 embeddings = AzureOpenAIEmbeddings(
-    azure_deployment="text-embedding-3-small"
+    azure_deployment=os.environ["AZURE_OPENAI_EMBEDDING_DEPLOYMENT_NAME"]
 )
 
 connection_string = os.environ["MSSQL_CONNECTION_STRING"]
