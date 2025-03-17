@@ -3,7 +3,7 @@ import logging
 from typing_extensions import List, TypedDict
 
 from dotenv import load_dotenv
-load_dotenv() 
+load_dotenv(override=True)
 
 import bs4
 
@@ -55,7 +55,8 @@ vector_store = SQLServer_VectorStore.from_documents(
     documents=all_splits , 
     embedding=AzureOpenAIEmbeddings(azure_deployment=os.environ["AZURE_OPENAI_EMBEDDING_DEPLOYMENT_NAME"]),
     embedding_length=1536,
-    connection_string=os.environ["MSSQL_CONNECTION_STRING"]
+    connection_string=os.environ["MSSQL_CONNECTION_STRING"],
+    table_name="rag2"
 )
 
 print("Initializing RAG pattern...")

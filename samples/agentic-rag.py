@@ -7,7 +7,7 @@ from typing_extensions import List, TypedDict
 from pydantic import BaseModel, Field
 
 from dotenv import load_dotenv
-load_dotenv() 
+load_dotenv(override=True)
 
 from langchain_community.document_loaders import WebBaseLoader
 from langchain_sqlserver.vectorstores import SQLServer_VectorStore
@@ -51,7 +51,7 @@ vector_store = SQLServer_VectorStore(
     embedding_function=AzureOpenAIEmbeddings(azure_deployment=os.environ["AZURE_OPENAI_EMBEDDING_DEPLOYMENT_NAME"]),
     embedding_length=1536,
     connection_string=os.environ["MSSQL_CONNECTION_STRING"],
-    table_name="lilian_weng_blog_posts"
+    table_name="agentic_rag"
 )
 vector_store.delete()
 
