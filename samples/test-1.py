@@ -36,6 +36,15 @@ store2 = SQLServer_VectorStore(
     embedding_length=1536
 )
 
+print("Setting up connection to SQL Server table 3...")
+
+store3 = SQLServer_VectorStore(
+    connection_string=connection_string,
+    embedding_function=embeddings,
+    table_name="langchain_test_table3",
+    embedding_length=1536
+)
+
 print("Creating payload...")
 
 payload = [
@@ -68,10 +77,25 @@ print("Delete text in table 2...")
 
 store2.delete(ids)
 
+# Test that more than one store is supported
+
 print("Storing text in table 2...")
 
 store2.add_texts(
     ids=ids,
+    texts=texts,
+    metadatas=metadatas
+)
+
+# Test automatic Ids
+
+print("Delete text in table 3...")
+
+store3.delete()
+
+print("Storing text in table 3 (no custom Ids)...")
+
+store3.add_texts(
     texts=texts,
     metadatas=metadatas
 )
