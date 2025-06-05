@@ -13,7 +13,7 @@ from langchain_sqlserver.vectorstores import SQLServer_VectorStore
 
 
 # Load environment variables
-load_dotenv() 
+load_dotenv(override=True)
 
 # Load document
 print("Loading document...")

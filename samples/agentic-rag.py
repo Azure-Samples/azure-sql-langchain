@@ -7,7 +7,7 @@ from typing_extensions import List, TypedDict
 from pydantic import BaseModel, Field
 
 from dotenv import load_dotenv
-load_dotenv() 
+load_dotenv(override=True)
 
 from langchain_community.document_loaders import WebBaseLoader
 from langchain_sqlserver.vectorstores import SQLServer_VectorStore

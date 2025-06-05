@@ -10,7 +10,7 @@ from langchain_core.documents import Document
 # logger = logging.getLogger(__name__)
 # logger.setLevel(logging.INFO)
 
-load_dotenv() 
+load_dotenv(override=True)
 
 print(f"Setting up connection to Azure OpenAI embeddings ({os.environ["AZURE_OPENAI_EMBEDDING_DEPLOYMENT_NAME"]})...")
 embeddings = AzureOpenAIEmbeddings(

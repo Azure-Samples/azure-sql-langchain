@@ -1,12 +1,16 @@
 # LangChain samples with `langchain_sqlserver`
 
-Get started with the `langchain_sqlserver` library with the following tutorials. All the tutorials works with Azure SQL or SQL Server 2025.
+Get started with the [`langchain_sqlserver` library](https://github.com/langchain-ai/langchain-azure/tree/main/libs/sqlserver) with the following tutorials. All the tutorials works with Azure SQL or SQL Server 2025.
 
 > [!NOTE]  
 > SQL Server 2025 is available as Community Technology Preview (CTP) 1.0. To get more info on how to get the CTP, take a look here: [Announcing Microsoft SQL Server 2025: Enterprise AI-ready database from ground to cloud](https://www.microsoft.com/en-us/sql-server/blog/2024/11/19/announcing-microsoft-sql-server-2025-apply-for-the-preview-for-the-enterprise-ai-ready-database/)
 
 > [!NOTE]  
 > In Azure SQL, Vector Functions are in Public Preview. Learn the details about vectors in Azure SQL here: https://aka.ms/azure-sql-vector-public-preview
+
+## Create an Azure SQL Database
+
+If you don't have an Azure SQL Database yet, you can create one following the [quickstart guide](https://learn.microsoft.com/en-us/azure/azure-sql/database/single-database-create-quickstart?view=azuresql&tabs=azure-portal). Keep in mind that you can take advatange of the Azure SQL *free* tier: [Try Azure SQL Database for free](https://learn.microsoft.com/en-us/azure/azure-sql/database/free-offer?view=azuresql).
 
 ## LangChain Getting-Started Samples
 
@@ -18,6 +22,18 @@ All samples are availabel int the `./samples` folder:
 
 ```bash
 cd samples
+```
+
+It is recommended that you use a virtual environment:
+
+```bash
+python -m venv .venv
+```
+
+And then make sure you have installed all required dependencies:
+
+```bash
+pip install -U -r .\requirements.txt
 ```
 
 ## LangChain Samples

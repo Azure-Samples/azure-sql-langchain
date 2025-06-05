@@ -7,14 +7,13 @@ from langchain_openai import AzureOpenAIEmbeddings
 
 # logging.basicConfig(format='%(asctime)s - %(levelname)s - %(message)s', level=logging.INFO)
 # logger = logging.getLogger(__name__)
-# logger.setLevel(logging.INFO)
+# logger.setLevel(logging.DEBUG)
 
-load_dotenv() 
+load_dotenv(override=True)
 
-print("Setting up connection to Azure OpenAI embeddings...")
-
+print(f"Setting up connection to Azure OpenAI embeddings ({os.environ["AZURE_OPENAI_EMBEDDING_DEPLOYMENT_NAME"]})...")
 embeddings = AzureOpenAIEmbeddings(
-    azure_deployment="text-embedding-3-small"
+    azure_deployment=os.environ["AZURE_OPENAI_EMBEDDING_DEPLOYMENT_NAME"]
 )
 
 connection_string = os.environ["MSSQL_CONNECTION_STRING"]
@@ -34,6 +33,15 @@ store2 = SQLServer_VectorStore(
     connection_string=connection_string,
     embedding_function=embeddings,
     table_name="langchain_test_table2",
+    embedding_length=1536
+)
+
+print("Setting up connection to SQL Server table 3...")
+
+store3 = SQLServer_VectorStore(
+    connection_string=connection_string,
+    embedding_function=embeddings,
+    table_name="langchain_test_table3",
     embedding_length=1536
 )
 
@@ -69,10 +77,25 @@ print("Delete text in table 2...")
 
 store2.delete(ids)
 
+# Test that more than one store is supported
+
 print("Storing text in table 2...")
 
 store2.add_texts(
     ids=ids,
+    texts=texts,
+    metadatas=metadatas
+)
+
+# Test automatic Ids
+
+print("Delete text in table 3...")
+
+store3.delete()
+
+print("Storing text in table 3 (no custom Ids)...")
+
+store3.add_texts(
     texts=texts,
     metadatas=metadatas
 )
