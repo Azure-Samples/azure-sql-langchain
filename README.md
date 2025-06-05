@@ -1,5 +1,7 @@
 # LangChain samples with `langchain_sqlserver`
 
+** Updated to use the `langchain_sqlserver` (0.1.2.) library. **
+
 Get started with the [`langchain_sqlserver` library](https://github.com/langchain-ai/langchain-azure/tree/main/libs/sqlserver) with the following tutorials. All the tutorials works with Azure SQL or SQL Server 2025.
 
 > [!NOTE]  
