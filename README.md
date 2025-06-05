@@ -5,7 +5,7 @@
 Get started with the [`langchain_sqlserver` library](https://github.com/langchain-ai/langchain-azure/tree/main/libs/sqlserver) with the following tutorials. All the tutorials works with Azure SQL or SQL Server 2025.
 
 > [!NOTE]  
-> SQL Server 2025 is available as Community Technology Preview (CTP) 1.0. To get more info on how to get the CTP, take a look here: [Announcing Microsoft SQL Server 2025: Enterprise AI-ready database from ground to cloud](https://www.microsoft.com/en-us/sql-server/blog/2024/11/19/announcing-microsoft-sql-server-2025-apply-for-the-preview-for-the-enterprise-ai-ready-database/)
+> SQL Server 2025 is available as Community Technology Preview (CTP). To get more info on how to get the CTP, and the latest news about SQL Server 2025, take a look here: [What's new in SQL Server 2025 Preview](https://learn.microsoft.com/en-us/sql/sql-server/what-s-new-in-sql-server-2025?view=sql-server-ver17)
 
 > [!NOTE]  
 > In Azure SQL, Vector Functions are in Public Preview. Learn the details about vectors in Azure SQL here: https://aka.ms/azure-sql-vector-public-preview
